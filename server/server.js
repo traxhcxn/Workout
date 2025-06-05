@@ -10,7 +10,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://workout-server-n7s8.onrender.com'],
+    origin: ['http://localhost:5173', 'https://workout-o81g.onrender.com'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
