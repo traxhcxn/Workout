@@ -17,6 +17,9 @@ app.use(cors({
 
 connectDB()
 
+app.get('/', (req, res) => {
+    res.send('API is running')
+})
 app.use('/api', authRoutes)
 app.use('/api/routines', routineRoutes)
 
