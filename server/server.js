@@ -9,11 +9,7 @@ const routineRoutes = require('./routers/routineRoute')
 const app = express()
 
 app.use(express.json())
-app.use(cors({
-    origin: 'https://workout-o81g.onrender.com',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
-}))
+app.use(cors())
 
 
 connectDB()
